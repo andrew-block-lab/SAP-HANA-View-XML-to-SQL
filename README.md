@@ -8,7 +8,7 @@ This translation is crucial for enterprises seeking to migrate their data proces
 
 ## Key Features
 
-- **Adaptation and Enhancement of Rello's Original Work**  
+- **Dynamic input and outputs**  
   Dynamically accepts an input XML file, generates the output based on the view name, and adds functions to clean up improperly formatted XML.
   
 - **XML Parsing and Cleaning**  
