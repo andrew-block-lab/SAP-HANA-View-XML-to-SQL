@@ -1,6 +1,9 @@
 # SAP HANA View XML to SQL Generator
 
-This repository is an adaptation of Rello's work from [HANA_XML-to-SQL](https://github.com/Rello/HANA_XML-to-SQL/blob/master/xmltosql.php), with enhancements to make the script more dynamic and flexible. It translates HANA view XML definitions into SQL queries, enabling the discovery and migration of business logic across platforms. This solution improves upon the original by allowing input of an XML file, dynamically generating output based on the name of the view, and adding file cleanup functions to handle improperly formatted XML.
+This repository is an adaptation of Rello's work from [HANA_XML-to-SQL](https://github.com/Rello/HANA_XML-to-SQL/blob/master/xmltosql.php), with enhancements to make the script more dynamic and flexible. It translates **HANA View XML definitions** into SQL queries, enabling the discovery and migration of business logic across platforms. 
+
+> **Important Note:**  
+This script **only works with HANA `View XML`** and is **not compatible with `Repository XML`**. Ensure that the input XML files are of the correct type (View XML) before using this tool.
 
 ## Why This is Important
 
@@ -9,10 +12,10 @@ This translation is crucial for enterprises seeking to migrate their data proces
 ## Key Features
 
 - **Dynamic Input and Outputs**  
-  Dynamically accepts an input XML file, generates the output based on the view name, and adds functions to clean up improperly formatted XML.
+  Dynamically accepts an input **View XML file**, generates the output based on the view name, and adds functions to clean up improperly formatted XML.
   
 - **XML Parsing and Cleaning**  
-  Handles improperly formatted HANA view XML by cleaning and standardizing tags before parsing.
+  Handles improperly formatted HANA **View XML** by cleaning and standardizing tags before parsing.
   
 - **Dynamic SQL Generation**  
   Translates HANA-specific elements such as projections, joins, aggregations, and ranks into portable SQL syntax.
@@ -21,7 +24,7 @@ This translation is crucial for enterprises seeking to migrate their data proces
   Converts complex field calculations, including formulas and aggregation behaviors, into equivalent SQL constructs like `CASE` and `SUM`.
   
 - **Join and Filter Support**  
-  Builds `JOIN` clauses and `WHERE` filters based on relationships and conditions specified in the XML.
+  Builds `JOIN` clauses and `WHERE` filters based on relationships and conditions specified in the **View XML**.
 
 - **Rank Function Handling**  
   Translates HANA rank views into SQL rank functions with proper partitioning and ordering.
@@ -31,4 +34,4 @@ This translation is crucial for enterprises seeking to migrate their data proces
 
 ## Why Use This Repository?
 
-This repository is essential for organizations aiming to migrate from SAP HANA to other data platforms without losing the business logic encoded in their calculation views. It streamlines the migration process and ensures that the logic encapsulated in HANA views remains intact and functional in a new environment.
+This repository is essential for organizations aiming to migrate from SAP HANA to other data platforms without losing the business logic encoded in their calculation views. It streamlines the migration process and ensures that the logic encapsulated in HANA views remains intact and functional in
