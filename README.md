@@ -2,7 +2,8 @@
 
 This repository is an adaptation of Rello's work from [HANA_XML-to-SQL](https://github.com/Rello/HANA_XML-to-SQL/blob/master/xmltosql.php), with enhancements to make the script more dynamic and flexible. It translates **HANA View XML definitions** into SQL queries, enabling the discovery and migration of business logic across platforms. 
 
-> **ℹ️**: This script **only works with HANA `View XML`** and is **not compatible with `Repository XML`**. Ensure that the input XML files are of the correct type (View XML) before using this tool.
+> ℹ️ **Note** \
+This script **only works with HANA `View XML`** and is **not compatible with `Repository XML`**. Ensure that the input XML files are of the correct type (View XML) before using this tool.
 
 ## Why This is Important
 
