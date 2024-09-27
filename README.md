@@ -1,6 +1,6 @@
 # HANA View XML to SQL Translator
 
-This repository is designed to translate HANA view XML definitions into SQL queries, enabling the discovery and migration of business logic across platforms. By parsing complex XML files that define HANA calculation views, this solution converts them into SQL statements, ensuring compatibility with other database systems.
+This repository is an adaptation of Rello's work from [HANA_XML-to-SQL](https://github.com/Rello/HANA_XML-to-SQL/blob/master/xmltosql.php), with enhancements to make the script more dynamic and flexible. It translates HANA view XML definitions into SQL queries, enabling the discovery and migration of business logic across platforms. This solution improves upon the original by allowing input of an XML file, dynamically generating output based on the name of the view, and adding file cleanup functions to handle improperly formatted XML.
 
 ## Why This is Important
 
@@ -8,6 +8,9 @@ This translation is crucial for enterprises seeking to migrate their data proces
 
 ## Key Features
 
+- **Adaptation and Enhancement of Rello's Original Work**  
+  Dynamically accepts an input XML file, generates the output based on the view name, and adds functions to clean up improperly formatted XML.
+  
 - **XML Parsing and Cleaning**  
   Handles improperly formatted HANA view XML by cleaning and standardizing tags before parsing.
   
