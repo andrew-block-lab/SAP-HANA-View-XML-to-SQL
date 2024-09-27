@@ -31,4 +31,4 @@ This translation is crucial for enterprises seeking to migrate their data proces
 
 ## Why Use This Repository?
 
-This repository is essential for organizations aiming to migrate from SAP HANA to other SQL-based platforms without losing the business logic encoded in their calculation views. It streamlines the migration process and ensures that the logic encapsulated in HANA views remains intact and functional in a new environment.
+This repository is essential for organizations aiming to migrate from SAP HANA to other data platforms without losing the business logic encoded in their calculation views. It streamlines the migration process and ensures that the logic encapsulated in HANA views remains intact and functional in a new environment.
